@@ -117,6 +117,13 @@ class JSONFileStorage {
         freeStore(this);
         fs.unlinkSync(this.path);
     };
+    
+    /**
+     * empties the storage
+     */
+    clear() {
+        freeStore(this);
+    };
 
     /**
      * returns all store items in an array
