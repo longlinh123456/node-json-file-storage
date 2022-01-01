@@ -123,6 +123,7 @@ class JSONFileStorage {
      */
     clear() {
         freeStore(this);
+        persistStore(this);
     };
 
     /**
